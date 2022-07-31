@@ -26,7 +26,7 @@ See the [Get Docker](https://docs.docker.com/get-docker/) guide for your system.
 Pull the repo, build the app, setup the database:
 
 ```
-git clone git@github.com/isa-api.git
+git clone git@github.com:JamesOkunlade/isa-api.git 
 cd isa-api
 
 docker-compose build
