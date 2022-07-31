@@ -1,4 +1,6 @@
 class StoreMovieTitleJob < ApplicationJob
+  require 'sidekiq/api'
+
   include ActiveJob::Status
   
   queue_as :critical

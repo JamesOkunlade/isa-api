@@ -5,7 +5,7 @@ ruby '3.0.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.6'
-gem 'sqlite3', '~> 1.4'
+gem 'pg', '~>1.1.3'
 gem 'puma', '~> 5.0'
 
 # Use Redis adapter to run Action Cable in production
@@ -13,7 +13,6 @@ gem 'puma', '~> 5.0'
 gem 'bcrypt', '~> 3.1.7'
 gem 'jwt', '~> 2.4', '>= 2.4.1'
 gem "sidekiq", "~> 6.5"
-gem "sinatra", require: false
 gem 'activejob-status'
 gem 'active_model_serializers', '~> 0.10.13'
 
@@ -32,9 +31,6 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem "rspec-rails", "~> 5.1", ">= 5.1.2"
-  gem "rubocop", "~> 1.19", require: false
-  gem "rubocop-rails", "~> 2.11", require: false
-  gem "rubocop-shopify", "~> 2.2", require: false
 end
 
 group :development do

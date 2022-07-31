@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  has_many :requests, dependent: :destroy
+
   # encrypt password
   has_secure_password
 

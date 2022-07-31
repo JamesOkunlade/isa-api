@@ -1,4 +1,4 @@
-class QueueJobsWorker
+class QueueJobsWorker  
   include Sidekiq::Worker
   sidekiq_options retry: false, queue: :critical
 
